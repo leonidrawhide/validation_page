@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+</head>
+<body>
+	<div class="login-form">
+		<div class="login-form__login-sign">
+			Регистрация
+		</div>
+
+		<div class="login-form__email">
+			<label for="email-input" id="label-email">Email</label> <br/>
+			<div class="login-form__email-wrapper" style="display: flex">
+				<p id='star-email'>*</p>
+				<input type="email" id="email-input" placeholder="Введите Email">
+			</div>
+			<div class="login-form__email-mandatory mandatory-field" id="email-mandatory-id">Поле обязательно для заполнения</div>
+			<div class="login-form__email-invalid" id="email-invalid">Email невалидный</div>
+		</div>
+
+		<div class="login-form__password">
+			<label for="password-input" id="label-password">Пароль</label> <br/>
+			<div class="login-form__password-wrapper" style="display: flex">
+				<p id='star-password'>*</p>
+				<input type="password" id="password-input" placeholder="Введите пароль">
+			</div>
+			<div class="login-form__password-mandatory mandatory-field" id="password-mandatory-id">Поле обязательно для заполнения</div>
+			<div class="login-form__password-length" id="password-length">Пароль должен содержать как минимум 8 символов</div>
+		</div>
+
+		<div class="login-form__checkbox" id="login-form-checkbox-id">
+			<div class="flex-class-checkbox">
+			<div class="login-form__checkbox-wrapper" style="display: flex">
+				<p id="star-checkbox">*</p>
+				<input class="login-form__checkbox_input" type="checkbox" id="checkbox-input">
+				<div class="form__custom-checkbox" id="custom-checkbox-id"></div>
+			</div>
+			<label for="checkbox-input" id="label-checkbox">Я согласен с <a id="link-to-rules" href="https://google.com">правилами пользования приложением</a></label>
+			</div>
+			<div class="login-form__checkbox-mandatory mandatory-field" id="checkbox-mandatory-id">Поле обязательно для заполнения</div>
+		</div>
+
+		<div class="login-form__button-wrapper">
+			<button class="login-form__button-wrapper_button">Регистрация</button>
+		</div>
+	</div>
+	<div class="error-message">
+		<p>Это разрешение не поддерживается согласно заданию, используйте ширину от 321 пикселей!</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
